@@ -1,4 +1,6 @@
 import logging
+from os import getenv
+# api 接口从环境变量读取
 
 from pydantic import BaseSettings, Field
 
@@ -10,7 +12,8 @@ _logger = logging.getLogger(__name__)
 
 
 class Settings(BaseSettings):
-    api_key: str = Field(default="sk-xxx", exclude=True)
+    # api_key: str = Field(default="sk-xxx", exclude=True)
+    api_key: str = Field(default=getenv('OPENAI_KEY',True), exclude=True)
     api_base: str = "https://api.openai.com/v1"
     model: str = "gpt-3.5-turbo"
     rate_limit: str = "60/hour"
