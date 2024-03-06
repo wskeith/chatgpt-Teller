@@ -177,7 +177,7 @@ watch(birthday, async (newBirthday, oldBirthday) => {
             <div class="footer" style="text-align:center">
               <p>
                 <a href="https://github.com/alongLFB/alonglfb.github.io/blob/master/images/wechatpay.png"
-                  style="text-decoration: underline;" target="_blank">请作者喝杯咖啡</a> - 🤗 Along Li
+                  style="text-decoration: underline;" target="_blank">请我喝杯奶茶吧</a> - 🤗
               </p>
             </div>
           </div>
