@@ -1,4 +1,5 @@
 <script setup>
+/*
 import { NSpin, NButton, useMessage } from 'naive-ui'
 import { onMounted, ref } from "vue";
 import { useRouter, useRoute } from 'vue-router'
@@ -59,13 +60,15 @@ const onGithubLogin = async () => {
         loading.value = false;
     }
 };
+*/
 </script>
 
 <template>
-    <n-spin size="large" description="正在登录..." :show="loading">
+<!--    <n-spin size="large" description="正在登录..." :show="loading">
         <n-button type="primary" block strong @click="onGithubLogin">Github 登录</n-button>
         <n-button type="secondary" block strong @click="router.push('/')">返回主页</n-button>
     </n-spin>
+--!>
 </template>
 
 <style scoped>
